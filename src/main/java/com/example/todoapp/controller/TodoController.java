@@ -3,10 +3,7 @@ package com.example.todoapp.controller;
 
 import com.example.todoapp.entity.Todo;
 import com.example.todoapp.service.TodoService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -21,14 +18,12 @@ public class TodoController {
     }
 
     @GetMapping
-    public List<Todo> getTodos() {
+    public List<Todo> all() {
         return service.getAll();
     }
 
-
-    @GetMapping("/{id}")
-    public Todo getById(@PathVariable Long id) {
-        return service.getById(id);
+    @PostMapping
+    public Todo create(@RequestBody Todo todo) {
+        return service.create(todo);
     }
-
 }
