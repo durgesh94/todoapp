@@ -1,26 +1,20 @@
 
-# 📝 Todo App (Spring Boot)
+# 📝 TODO App – Spring Boot + PostgreSQL (Render)
 
-A simple and clean **Spring Boot REST API** that manages a list of todos.  
-This project is designed as a beginner‑friendly backend demonstrating:
-
-- Spring Boot fundamentals  
-- REST API development  
-- Service & controller layers  
-- In-memory data handling (no database for now)  
-- Deploying to Render  
+A simple RESTful Todo application built using **Spring Boot 3**, **Spring Data JPA**, and **PostgreSQL** hosted on **Render.com**.  
+This project demonstrates CRUD operations, environment‑based DB config, clean package structure, and proper API versioning.
 
 ---
 
-## 🚀 Features
+## 📌 Features
 
-✔ Get all todos  
-✔ Get todo by ID  
-✔ In‑memory list (no database required)  
-✔ Clean project structure (Controller → Service → Model)  
-✔ Easy to deploy (Heroku / Render / Railway / Docker)  
-✔ Perfect for learning Spring Boot basics  
+- Create new todos
+- List all todos
+- Store data in PostgreSQL (hosted on Render)
+- REST API built with Spring Boot 3
+- JPA/Hibernate entity mapping
+- Versioned API (`/api/v1/todos`)
 
 ---
 
-## 🧱 Project Structure
+## 📦 Project Structure
